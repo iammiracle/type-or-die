@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type or Die - Type or Die | Improve Your Typing Speed</title>
+    <meta name="description" content="Type or Die is an exciting typing game that helps you improve your typing speed while having fun. Type words to destroy enemies and survive as long as you can!">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://iammiracle.github.io/type-or-die/">
+    <meta property="og:title" content="Type or Die - Type or Die | Improve Your Typing Speed">
+    <meta property="og:description" content="Type or Die is an exciting typing game that helps you improve your typing speed while having fun. Type words to destroy enemies and survive as long as you can!">
+    <meta property="og:image" content="https://iammiracle.github.io/type-or-die/preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://iammiracle.github.io/type-or-die/">
+    <meta property="twitter:title" content="Type or Die - Type or Die | Improve Your Typing Speed">
+    <meta property="twitter:description" content="Type or Die is an exciting typing game that helps you improve your typing speed while having fun. Type words to destroy enemies and survive as long as you can!">
+    <meta property="twitter:image" content="https://iammiracle.github.io/type-or-die/preview.jpg">
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add more gaming fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Press+Start+2P&family=Audiowide&family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Libraries with fallbacks -->
+    <script>
+        // Check if Howler is loaded correctly
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                if (typeof Howl === 'undefined') {
+                    console.error('Howler.js failed to load. Creating fallback.');
+                    // Create a fallback Howl object
+                    window.Howl = function(config) {
+                        this.play = function() { return 1; };
+                        this.pause = function() {};
+                        this.stop = function() {};
+                        if (typeof config.onload === 'function') {
+                            setTimeout(config.onload, 10);
+                        }
+                    };
+                }
+            }, 1000);
+        });
+    </script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-canvas"></div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <!-- Primary CDN for Howler -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <!-- Fallback CDN for Howler -->
+    <script>
+        if (typeof Howl === 'undefined') {
+            console.log('Loading Howler from fallback CDN');
+            document.write('<script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"><\/script>');
+        }
+    </script>
+    
+    <!-- Game Scripts -->
+    <script src="js/words.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/bullet.js"></script>
+    <script src="js/enemy.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
