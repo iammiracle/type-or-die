@@ -1,4 +1,4 @@
-# KEYSTRIKES - Type or Die
+# Type or Die - Type to Survice
 
 A fast-paced typing game that helps you improve your typing speed while having fun. Type words to destroy enemies and survive as long as you can!
 
@@ -32,7 +32,7 @@ A fast-paced typing game that helps you improve your typing speed while having f
 
 ## Features for Typing Practice
 
-KEYSTRIKES is designed to help you improve your typing skills:
+Type or Die is designed to help you improve your typing skills:
 
 - **Real-time Feedback**: See your typing speed and accuracy as you play.
 - **Progressive Difficulty**: As you level up, you'll encounter more challenging words.
@@ -78,9 +78,9 @@ To modify or extend the game:
 
 ## Credits
 
-- Sound effects from [CodePen Assets](https://codepen.io/assets/)
+- Sound effects from [CodePen Assets](https://pixabay.com/)
 - Fonts from Google Fonts
-- Game concept and implementation by [Your Name]
+- Game concept and implementation by [iammiracle]
 
 ## License
 

@@ -576,12 +576,12 @@ class Game {
         const glowAmount = Math.sin(this.p.frameCount * 0.05) * 10 + 20;
         this.p.fill(0, 150, 255, glowAmount);
         this.p.textSize(60); // Reduced size
-        this.p.text("KEYSTRIKES", this.width / 2 + 2, 150 + 2);
+        this.p.text("Type or Die", this.width / 2 + 2, 150 + 2);
         
         // Main title
         this.p.fill(0, 200, 255);
         this.p.textSize(60); // Reduced size
-        this.p.text("KEYSTRIKES", this.width / 2, 150);
+        this.p.text("Type or Die", this.width / 2, 150);
         
         // Subtitle
         this.p.fill(200, 200, 200);

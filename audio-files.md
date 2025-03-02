@@ -1,4 +1,4 @@
-# Audio Files Needed for KEYSTRIKES
+# Audio Files Needed for Type or Die
 
 Place these audio files in an `assets` folder in your game directory. The game will look for them at these paths.
 
