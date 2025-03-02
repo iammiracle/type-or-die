@@ -1,4 +1,4 @@
-# Type or Die - Type to Survice
+# Type or Die - Type to Survive
 
 A fast-paced typing game that helps you improve your typing speed while having fun. Type words to destroy enemies and survive as long as you can!
 
